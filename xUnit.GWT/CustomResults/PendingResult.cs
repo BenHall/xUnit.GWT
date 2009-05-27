@@ -15,7 +15,7 @@ namespace xUnit.GWT.CustomResults
 
         public override XmlNode ToXml(XmlNode parentNode)
         {
-            XmlUtility.AddAttribute(parentNode, "story", "THIS IS MY STORY");
+            XmlUtility.AddAttribute(parentNode, "story", "");
             XmlNode node = base.ToXml(parentNode);
             XmlUtility.AddAttribute(node, "result", "Pending");
             XmlUtility.AddCDataSection(XmlUtility.AddElement(XmlUtility.AddElement(node, "reason"), "message"), Reason);

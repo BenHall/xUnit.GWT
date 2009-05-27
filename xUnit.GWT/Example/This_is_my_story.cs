@@ -1,9 +1,9 @@
 ﻿namespace xUnit.GWT.Example
 {
-    [As_A("User...")]
-    [I_Want("To...")]
-    [So_That("I...")]
-    //[Story("As a user... I want to... So that I...")]
+    //[As_A("User...")]
+    //[I_Want("To...")]
+    //[So_That("I...")]
+    [Feature("As a user... I want to... So that I...")]
     public class This_is_my_story : This_is_my_story_Base
     {
         [Scenario]

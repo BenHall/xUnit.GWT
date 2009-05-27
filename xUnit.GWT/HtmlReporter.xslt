@@ -78,9 +78,9 @@
       <xsl:if test="@result!='Pending'"><span class="timing"><xsl:value-of select="@time"/>s</span></xsl:if>
       <xsl:if test="@result='Pending'"><span class="timing"></span><span class="skipped">P</span></xsl:if>
       <xsl:if test="@result='Fail'"><span class="failure">
-        <img src="C:\Documents and Settings\ben.hall\My Documents\Visual Studio 2008\Projects\xUnit.GWT\xUnit.GWT\Failed.png" />
+        <img src="Failed.png" />
       </span></xsl:if>
-      <xsl:if test="@result='Pass'"><span class="success"><img src="C:\Documents and Settings\ben.hall\My Documents\Visual Studio 2008\Projects\xUnit.GWT\xUnit.GWT\Passed.png" /></span></xsl:if>
+      <xsl:if test="@result='Pass'"><span class="success"><img src="Passed.png" /></span></xsl:if>
       &#160;<xsl:value-of select="@name"/>
       <xsl:if test="@result='Fail'">
         <br/>
@@ -104,7 +104,7 @@
         <xsl:attribute name="onclick">ToggleClass('class<xsl:value-of select="position()"/>')</xsl:attribute>
         <xsl:attribute name="ondblclick">ToggleClass('class<xsl:value-of select="position()"/>')</xsl:attribute>
         <b>
-          Story - <xsl:value-of select="@story"/>
+          Feature - <xsl:value-of select="@story"/>
         </b>
         <span>
           <small>

@@ -29,6 +29,7 @@ namespace xUnit.GWT
             string AsA = string.Empty;
             string IWant = string.Empty;
             string SoThat = string.Empty;
+            string FeatureText = string.Empty;
             foreach (var attribute in o.GetType().GetCustomAttributes(true))
             {
                 IStoryAttribute a = attribute as IStoryAttribute;
@@ -43,9 +44,16 @@ namespace xUnit.GWT
                     case "So_That":
                         SoThat = a.Value;
                         break;
+                    case "Feature":
+                        FeatureText = a.Value;
+                        break;
                 }
             }
-            return string.Format("As a {0} I want {1} so that {2}", AsA, IWant, SoThat);
+
+            if (!string.IsNullOrEmpty(AsA) || !string.IsNullOrEmpty(IWant) || !string.IsNullOrEmpty(SoThat))
+                return string.Format("As a {0} I want {1} so that {2}", AsA, IWant, SoThat);
+            else
+                return FeatureText;
         }
     }
 }

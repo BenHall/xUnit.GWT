@@ -66,4 +66,25 @@ namespace xUnit.GWT
             get { return "As_A"; }
         }
     }
+
+
+    public class Feature : Attribute, IStoryAttribute
+    {
+        private readonly string Text;
+
+        public Feature(string text)
+        {
+            Text = text;
+        }
+
+        public string Value
+        {
+            get { return Text;}
+        }
+
+        public string Type
+        {
+            get { return "Feature"; }
+        }
+    }
 }
