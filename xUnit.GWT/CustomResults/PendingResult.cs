@@ -10,7 +10,7 @@ namespace xUnit.GWT.CustomResults
     public class PendingResult : SkipResult
     {
         public PendingResult(MethodInfo method, string name)
-            : base(name, "Pending", name, new Dictionary<string, string>(), name + " is still pending to be implemented...")
+            : base(method.Name, "Pending", name, new Dictionary<string, string>(), name + " is still pending to be implemented...")
         {}
 
         public override XmlNode ToXml(XmlNode parentNode)

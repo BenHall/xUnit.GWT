@@ -29,6 +29,7 @@
           .indent { margin: 0.25em 0 0.5em 2em; }
           .clickable { cursor: pointer; }
           .testcount { font-size: 85%; }
+          blockquote { height: 0px; }
         </style>
         <script language="javascript">
           function ToggleClass(id) {
@@ -76,15 +77,13 @@
     <div>
       <xsl:attribute name="class"><xsl:if test="(position() mod 2 = 0)">alt</xsl:if>row</xsl:attribute>
       <xsl:if test="@result!='Pending'"><span class="timing"><xsl:value-of select="@time"/>s</span></xsl:if>
-      <xsl:if test="@result='Pending'"><span class="timing"></span><span class="skipped">P</span></xsl:if>
-      <xsl:if test="@result='Fail'"><span class="failure">
-        <img src="Failed.png" />
-      </span></xsl:if>
+      <xsl:if test="@result='Pending'"><span class="skipped"> P</span></xsl:if>
+      <xsl:if test="@result='Fail'"><span class="failure"><img src="Failed.png" /></span></xsl:if>
       <xsl:if test="@result='Pass'"><span class="success"><img src="Passed.png" /></span></xsl:if>
-      &#160;<xsl:value-of select="@name"/>
+      <xsl:value-of select="@name"/>
       <xsl:if test="@result='Fail'">
-        <br/>
-        <blockquote> <xsl:value-of select="child::node()/message"/>
+        <blockquote> 
+          <xsl:value-of select="child::node()/message"/>
         </blockquote>
       </xsl:if>
       <br clear="all" />

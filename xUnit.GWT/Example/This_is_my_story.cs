@@ -27,8 +27,8 @@
         [Scenario]
         public void part_is_missing()
         {
-            Given("one valid given block", Pending);
-            When("there is no then block [then it should fail]", Pending);
+            Given("one valid 'given' block", Pending);
+            When("there is no 'then' block [it should fail]", Pending);
             //Then("it should fail");
         }
 
@@ -43,7 +43,7 @@
         public void pending_block()
         {
             Given("a block which has been defined");
-            When("no action assigned", Pending);
+            When("no action assigned");
             Then("it should be marked as pending");
         }
     }

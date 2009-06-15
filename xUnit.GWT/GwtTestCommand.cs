@@ -68,11 +68,11 @@ namespace xUnit.GWT
         private string GetName()
         {
             string name = string.Empty;
-            name = GetNameSection(name, GivenList, "Given");
+            name = GetNameSection(name, GivenList, "Given") + Environment.NewLine;
 
-            name = GetNameSection(name, WhenList, "When");
+            name = GetNameSection(name, WhenList, "When") + Environment.NewLine;
 
-            name = GetNameSection(name, ThenList, "Then");
+            name = GetNameSection(name, ThenList, "Then") + Environment.NewLine;
 
             return name;
         }

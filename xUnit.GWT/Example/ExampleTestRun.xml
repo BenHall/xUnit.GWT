@@ -1,8 +1,47 @@
-<assembly name="C:\Documents and Settings\ben.hall\My Documents\Visual Studio 2008\Projects\xUnit.GWT\xUnit.GWT\bin\Debug\xUnit.GWT.DLL" run-date="2009-05-08" run-time="10:46:28" time="0.026" total="4" passed="1" failed="2" skipped="1"><class story="As a User... I want To... so that I..." time="0.026" name="xUnit.GWT.This_is_my_story" total="4" passed="1" failed="2" skipped="1"><test name=" Given a block which has been defined When no action assigned Then it should be marked as pending" type="Pending" method=" Given a block which has been defined When no action assigned Then it should be marked as pending" result="Pending"><reason><message><![CDATA[ Given a block which has been defined When no action assigned Then it should be marked as pending is still pending to be implemented...]]></message></reason><reason><message><![CDATA[ Given a block which has been defined When no action assigned Then it should be marked as pending is still pending to be implemented...]]></message></reason></test><test name=" Given one valid given block When there is no then block [then it should fail]" type="xUnit.GWT.This_is_my_story" method="part_is_missing" result="Fail" reason="Part Missing" time="0.004"><failure exception-type="xUnit.GWT.PartMissing"><message><![CDATA[xUnit.GWT.PartMissing : Must have at least one type of then]]></message></failure><failure><message>Must have at least one type of then</message></failure></test><test name=" Given both accounts have positive balances When transfer money from a to b Then a should have the total balance of b and balance of b should be 0" type="xUnit.GWT.This_is_my_story" method="when_transferring_between_two_accounts" time="0.005" result="Pass" /><test name=" Given both accounts have positive balances When transfer money from a to b Then a should have the total balance of b and balance of b should be 0" type="xUnit.GWT.This_is_my_story" method="if_then_is_wrong_then_it_should_fail" result="Fail" reason="Part Missing" time="0.012"><failure exception-type="xUnit.GWT.PartFailed"><message><![CDATA[xUnit.GWT.PartFailed : Then balance of b should be 0 failed to complete successfully
+<assembly name="D:\SourceControl\xUnit.GWT\xUnit.GWT\bin\Debug\xUnit.GWT.DLL" run-date="2009-06-15" run-time="11:49:33" time="0.023" total="5" passed="1" failed="1" skipped="3">
+  <class story="As a user... I want to... So that I..." time="0.023" name="xUnit.GWT.Example.This_is_my_story" total="5" passed="1" failed="1" skipped="3">
+    <test name=" Given a block which has been defined When no action assigned Then it should be marked as pending" type="Pending" method="pending_block" result="Pending">
+      <reason>
+        <message><![CDATA[ Given a block which has been defined When no action assigned Then it should be marked as pending is still pending to be implemented...]]></message>
+      </reason>
+      <reason>
+        <message><![CDATA[ Given a block which has been defined When no action assigned Then it should be marked as pending is still pending to be implemented...]]></message>
+      </reason>
+    </test>
+    <test name=" Given both accounts have positive balances When transfer money from a to b Then a should have the total balance of b and balance of b should be 0" type="xUnit.GWT.Example.This_is_my_story" method="if_then_is_wrong_then_it_should_fail" result="Fail" reason="Part Missing" time="0.017">
+      <failure exception-type="xUnit.GWT.PartFailed">
+        <message>
+          <![CDATA[xUnit.GWT.PartFailed : Then balance of b should be 0 failed to complete successfully
 ---- Assert.Equal() Failure
 Expected: 3
-Actual:   0]]></message><stack-trace><![CDATA[
+Actual:   0]]>
+        </message>
+        <stack-trace>
+          <![CDATA[
 ----- Inner Stack Trace -----
-   at xUnit.GWT.XUnitExtensions.ShouldBe[T](T actual, T expected) in C:\Documents and Settings\ben.hall\My Documents\Visual Studio 2008\Projects\xUnit.GWT\xUnit.GWT\XUnitExtensions.cs:line 10
-   at xUnit.GWT.This_is_my_story.<if_then_is_wrong_then_it_should_fail>b__f() in C:\Documents and Settings\ben.hall\My Documents\Visual Studio 2008\Projects\xUnit.GWT\xUnit.GWT\This_is_my_story.cs:line 24
-   at xUnit.GWT.GwtTestCommand.ExecuteThenPart(List`1 parts) in C:\Documents and Settings\ben.hall\My Documents\Visual Studio 2008\Projects\xUnit.GWT\xUnit.GWT\GwtTestCommand.cs:line 95]]></stack-trace></failure><failure /></test></class></assembly>
+   at xUnit.GWT.XUnitExtensions.ShouldBe[T](T actual, T expected) in D:\SourceControl\xUnit.GWT\xUnit.GWT\XUnitExtensions.cs:line 10
+   at xUnit.GWT.Example.This_is_my_story.<if_then_is_wrong_then_it_should_fail>b__7() in D:\SourceControl\xUnit.GWT\xUnit.GWT\Example\This_is_my_story.cs:line 24
+   at xUnit.GWT.GwtTestCommand.ExecuteThenPart(List`1 parts) in D:\SourceControl\xUnit.GWT\xUnit.GWT\GwtTestCommand.cs:line 103]]>
+        </stack-trace>
+      </failure>
+      <failure />
+    </test>
+    <test name=" Given one valid given block When there is no then block [then it should fail]" type="Pending" method="part_is_missing" result="Pending">
+      <reason>
+        <message><![CDATA[ Given one valid given block When there is no then block [then it should fail] is still pending to be implemented...]]></message>
+      </reason>
+      <reason>
+        <message><![CDATA[ Given one valid given block When there is no then block [then it should fail] is still pending to be implemented...]]></message>
+      </reason>
+    </test>
+    <test name=" Given one pending block Then it should be marked as pending in the report" type="Pending" method="test_marked_as_pending" result="Pending">
+      <reason>
+        <message><![CDATA[ Given one pending block Then it should be marked as pending in the report is still pending to be implemented...]]></message>
+      </reason>
+      <reason>
+        <message><![CDATA[ Given one pending block Then it should be marked as pending in the report is still pending to be implemented...]]></message>
+      </reason>
+    </test>
+    <test name=" Given both accounts have positive balances When transfer money from a to b Then a should have the total balance of b and balance of b should be 0" type="xUnit.GWT.Example.This_is_my_story" method="when_transferring_between_two_accounts" time="0.000" result="Pass" />
+  </class>
+</assembly>
